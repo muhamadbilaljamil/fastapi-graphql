@@ -1,5 +1,5 @@
 from orator import DatabaseManager, Schema, Model
-import orator
+# import orator
 from .config import settings
 
 DATABASES = {

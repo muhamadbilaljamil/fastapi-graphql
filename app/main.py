@@ -1,7 +1,6 @@
 # import graphene
 # from fastapi import FastAPI
 # from starlette.graphql import GraphQLApp
-
 # from .schema import Mutation, Query
 
 import asyncio
@@ -62,7 +61,7 @@ class User(HTTPEndpoint):
 
 routes = [
     Route("/", Homepage),
-    Route("/{username}", User)
+    Route("/", User)
 ]
 
 app = Starlette(routes=routes)
